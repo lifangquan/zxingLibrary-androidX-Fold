@@ -1,4 +1,6 @@
-# android-zxingLibrary
+# zxingLibrary-androidX-Fold
+
+原项目：<a href="https://github.com/yipianfengye/android-zxingLibrary">yipianfengye/android-zxingLibrary</a>
 
 
 **更新日志**
@@ -22,6 +24,8 @@
 - compile 2.1 2016/11/22 修复扫描中的一些bug
 
 - compile 2.2 2017/07/04 更新zxing包，修复一些已知的bug
+
+- compile 2.3 2021/01/20 迁移到AndroidX，折叠屏适配，支持开关Beep音
 
 **使用说明**
 
@@ -48,16 +52,6 @@
 
 ```
 compile 'cn.yipianfengye.android:zxing-library:2.2'
-```
-
-- 在demo Application中执行初始化操作
-```
-@Override
-    public void onCreate() {
-        super.onCreate();
-
-        ZXingLibrary.initDisplayOpinion(this);
-    }
 ```
 
 - 在代码中执行打开扫描二维码界面操作
